@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Hillenbrand Menu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="/Menus/CSS/mobile/jquery.mobile-1.0.1.min.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/Menus/Images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Menus/Images/apple-touch-icon-114x114.png">
+    <script src="/Menus/Scripts/jquery-1.5.1.min.js"></script>
+    <script src="/Menus/Scripts/jquery.mobile-1.0.1.min.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-688471-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    
+<script>
+    $(function() {
+                $.mobile.changePage('#Dinner');
+    });
+</script>
+
+    <div data-role="page" data-theme="d" id="Breakfast">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Hillenbrand</h1>
+            <a href="/Menus/HILL/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/HILL/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/HILL/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                    <li>Not Serving</li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Lunch">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Hillenbrand</h1>
+            <a href="/Menus/HILL/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/HILL/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/HILL/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                        <li data-role="list-divider">Creation Station</li>
+                            <li>Spinach Feta Quesadilla <span style="float:right; color:green;">v</span></li>
+                            <li>Boot Scootin&#39; Wrap</li>
+                            <li>Create To Order Quesadillas</li>
+                            <li>Wrap Line</li>
+                        <li data-role="list-divider">3rd Street Grill</li>
+                            <li>Gourmet Grilled Cheese <span style="float:right; color:green;">v</span></li>
+                            <li>Hamburgers and Toppings</li>
+                            <li>Buffalo Burger</li>
+                            <li>Crispy Q Fries</li>
+                        <li data-role="list-divider">Heartland Classics</li>
+                            <li>Chicken Tetrazzini</li>
+                            <li>Crinkle Cut Carrots <span style="float:right; color:green;">v</span></li>
+                            <li>Beef Barley Soup</li>
+                            <li>Heartland Classic Meatloaf</li>
+                            <li>Pasta Vegetable Bake <span style="float:right; color:green;">v</span></li>
+                            <li>Grilled Squash <span style="float:right; color:green;">v</span></li>
+                            <li>Whipped Potatoes <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Stack It Up Deli</li>
+                            <li>Deli Subs</li>
+                        <li data-role="list-divider">Daily Feature</li>
+                            <li>Tomato Vegetable Fried Rice <span style="float:right; color:green;">v</span></li>
+                            <li>Egg Drop Soup <span style="float:right; color:green;">v</span></li>
+                            <li>Beef Vegetable Stir Fry</li>
+                            <li>Jasmine Rice <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Leaf n Ladle</li>
+                            <li>Fresh Fruit Bar</li>
+                            <li>Oriental Sweet And Sour Pasta Salad</li>
+                            <li>Caesar Salad</li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Dinner">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Hillenbrand</h1>
+            <a href="/Menus/HILL/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/HILL/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/HILL/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                        <li data-role="list-divider">Creation Station</li>
+                            <li>Double Swipe Breaded Shrimp</li>
+                            <li>Double Swipe New York Strip Steak</li>
+                            <li>Create To Order Quesadillas</li>
+                        <li data-role="list-divider">3rd Street Grill</li>
+                            <li>Crispy Q Fries</li>
+                            <li>San Francisco Burger</li>
+                            <li>Hamburgers and Toppings</li>
+                            <li>Gourmet Grilled Cheese <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Heartland Classics</li>
+                            <li>Teriyaki Beef Strips</li>
+                            <li>Fried Chicken</li>
+                            <li>Sweet Yeasty Rolls</li>
+                            <li>Beef Barley Soup</li>
+                            <li>Macaroni &amp; Cheese <span style="float:right; color:green;">v</span></li>
+                            <li>Whipped Potatoes <span style="float:right; color:green;">v</span></li>
+                            <li>Green Beans <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Stack It Up Deli</li>
+                            <li>Deli Subs</li>
+                        <li data-role="list-divider">Daily Feature</li>
+                            <li>Baked Potato <span style="float:right; color:green;">v</span></li>
+                            <li>Broccoli Florets <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Leaf n Ladle</li>
+                            <li>Caesar Salad</li>
+                            <li>Fresh Fruit Bar</li>
+                            <li>Oriental Sweet And Sour Pasta Salad</li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Info">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Information</h1>
+        </div>
+        <div data-role="content">
+            <h2>Hillenbrand Dining Court</h2>
+            <h3>Address & Phone</h3>
+            <p>(765) 494-0325</p>
+            <p>1301 Third Street<br />West Lafayette, IN 47906-4206</p>
+            <h3>Hours - Academic Year</h3>
+            <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                <li data-role="list-divider">Monday - Friday</li>
+                <li>Breakfast: Closed</li>
+                <li>Lunch: 11:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: 5:00 p.m.-7:30 p.m.</li>
+                <li data-role="list-divider">Saturday</li>
+                <li>Breakfast: Closed</li>
+                <li>Lunch: 10:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: 5:00 p.m.-7:30 p.m.</li>
+                <li data-role="list-divider">Sunday</li>
+                <li>Breakfast: Closed</li>
+                <li>Lunch: 11:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: Closed</li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none" class="ui-btn-active ui-state-persist">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
