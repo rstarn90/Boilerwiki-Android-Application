@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Wiley Menu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="/Menus/CSS/mobile/jquery.mobile-1.0.1.min.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/Menus/Images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Menus/Images/apple-touch-icon-114x114.png">
+    <script src="/Menus/Scripts/jquery-1.5.1.min.js"></script>
+    <script src="/Menus/Scripts/jquery.mobile-1.0.1.min.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-688471-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    
+<script>
+    $(function() {
+                $.mobile.changePage('#Dinner');
+    });
+</script>
+
+    <div data-role="page" data-theme="d" id="Breakfast">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Wiley</h1>
+            <a href="/Menus/WILY/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/WILY/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/WILY/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                        <li data-role="list-divider">Open Flame</li>
+                            <li>Baked Oatmeal</li>
+                            <li>Hash Brown Patty <span style="float:right; color:green;">v</span></li>
+                            <li>Sausage Patty</li>
+                            <li>Roasted Fuji Apples <span style="float:right; color:green;">v</span></li>
+                            <li>Scrambled Eggs <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Romeo &amp; Parmesan</li>
+                            <li>Omelet or Breakfast Skillet</li>
+                        <li data-role="list-divider">Classic Flavors</li>
+                            <li>Bacon Egg Cheese Biscuit</li>
+                            <li>Raisin Rice Cereal </li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Lunch">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Wiley</h1>
+            <a href="/Menus/WILY/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/WILY/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/WILY/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                        <li data-role="list-divider">Open Flame</li>
+                            <li>Fresh Grilled Onion Seasoned Burger</li>
+                            <li>Buffalo Chicken Dip</li>
+                            <li>Smoked Pulled Pork</li>
+                        <li data-role="list-divider">Romeo &amp; Parmesan</li>
+                            <li>Sizzling Pasta</li>
+                            <li>Bread Sticks</li>
+                        <li data-role="list-divider">Classic Flavors</li>
+                            <li>Battered Apple Crescents <span style="float:right; color:green;">v</span></li>
+                            <li>Thincut Fries <span style="float:right; color:green;">v</span></li>
+                            <li>Vegetable Stroganoff <span style="float:right; color:green;">v</span></li>
+                            <li>Mushroom Barley Soup <span style="float:right; color:green;">v</span></li>
+                            <li>Egg Noodles <span style="float:right; color:green;">v</span></li>
+                            <li>Green Beans <span style="float:right; color:green;">v</span></li>
+                            <li>Chicken Florentine</li>
+                            <li>Philly Steak Sandwich</li>
+                        <li data-role="list-divider">Churrascaria</li>
+                            <li>Antipasto Bar</li>
+                            <li>Moroccan Spinach Salad</li>
+                            <li>Peanut Taffy Apple Salad</li>
+                            <li>Roasted Turkey Breast</li>
+                            <li>Garlic Beef</li>
+                            <li>Red Potatoes <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Mozzarella Fresca</li>
+                            <li>Create Your Own Pizza</li>
+                        <li data-role="list-divider">Fresh Tastes</li>
+                            <li>Orange Wedges</li>
+                            <li>Cantaloupe Slices</li>
+                            <li>Kiwi Fruit</li>
+                            <li>Tropical Fruit Salad</li>
+                            <li>Fresh Tastes Deli</li>
+                            <li>Fresh Tastes Salads</li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Dinner">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Wiley</h1>
+            <a href="/Menus/WILY/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/WILY/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/WILY/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                        <li data-role="list-divider">Open Flame</li>
+                            <li>Double Swipe Oriental Fantail Shrimp</li>
+                            <li>Marinated London Broil</li>
+                            <li>Smoked Pulled Pork</li>
+                        <li data-role="list-divider">Romeo &amp; Parmesan</li>
+                            <li>Sizzling Pasta</li>
+                            <li>Parmesan Dinner Roll</li>
+                        <li data-role="list-divider">Classic Flavors</li>
+                            <li>Thincut Fries <span style="float:right; color:green;">v</span></li>
+                            <li>Vegetable Stroganoff <span style="float:right; color:green;">v</span></li>
+                            <li>Philly Steak Sandwich</li>
+                            <li>Cheesy Chicken with Mushrooms</li>
+                            <li>Green Beans <span style="float:right; color:green;">v</span></li>
+                            <li>Egg Noodles <span style="float:right; color:green;">v</span></li>
+                            <li>Battered Apple Crescents <span style="float:right; color:green;">v</span></li>
+                            <li>Mushroom Barley Soup <span style="float:right; color:green;">v</span></li>
+                            <li>Converted Rice <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Churrascaria</li>
+                            <li>Peanut Taffy Apple Salad</li>
+                            <li>Roasted Turkey Breast</li>
+                            <li>Red Potatoes <span style="float:right; color:green;">v</span></li>
+                            <li>Garlic Beef</li>
+                            <li>Moroccan Spinach Salad</li>
+                            <li>Antipasto Bar</li>
+                        <li data-role="list-divider">Mozzarella Fresca</li>
+                            <li>Create Your Own Pizza</li>
+                        <li data-role="list-divider">Fresh Tastes</li>
+                            <li>Fresh Tastes Salads</li>
+                            <li>Orange Wedges</li>
+                            <li>Fresh Tastes Deli</li>
+                            <li>Tropical Fruit Salad</li>
+                            <li>Cantaloupe Slices</li>
+                            <li>Kiwi Fruit</li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Info">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Information</h1>
+        </div>
+        <div data-role="content">
+            <h2>Wiley Dining Court</h2>
+            <h3>Address & Phone</h3>
+            <p>(765) 494-2264</p>
+            <p>498 North Martin Jischke Drive<br />West Lafayette, IN 47906-4277</p>
+            <h3>Hours - Academic Year</h3>
+            <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                <li data-role="list-divider">Monday - Friday</li>
+                <li>Breakfast: 6:30 a.m.-9:30 a.m.</li>
+                <li>Lunch: 11:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: 5:00 p.m.-8:30 p.m.</li>
+                <li data-role="list-divider">Saturday</li>
+                <li>Breakfast: 8:00 a.m.-9:30 a.m.</li>
+                <li>Lunch: 11:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: 5:00 p.m.-8:30 p.m.</li>
+                <li data-role="list-divider">Sunday</li>
+                <li>Breakfast: 8:00 a.m.-9:30 a.m.</li>
+                <li>Lunch: 11:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: Closed</li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none" class="ui-btn-active ui-state-persist">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

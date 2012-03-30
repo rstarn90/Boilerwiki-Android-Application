@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Earhart Menu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="/Menus/CSS/mobile/jquery.mobile-1.0.1.min.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/Menus/Images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Menus/Images/apple-touch-icon-114x114.png">
+    <script src="/Menus/Scripts/jquery-1.5.1.min.js"></script>
+    <script src="/Menus/Scripts/jquery.mobile-1.0.1.min.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-688471-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    
+<script>
+    $(function() {
+                $.mobile.changePage('#Dinner');
+    });
+</script>
+
+    <div data-role="page" data-theme="d" id="Breakfast">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Earhart</h1>
+            <a href="/Menus/ERHT/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/ERHT/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/ERHT/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                        <li data-role="list-divider">Granite Grill</li>
+                            <li>Smokey Links</li>
+                            <li>Fried Eggs</li>
+                            <li>Hashbrown Bake</li>
+                        <li data-role="list-divider">Heartland Classics</li>
+                            <li>Sausage Gravy and Biscuits</li>
+                            <li>Mushroom Foo Yung <span style="float:right; color:green;">v</span></li>
+                            <li>Top Your Own Oatmeal</li>
+                        <li data-role="list-divider">The Pastry Shop</li>
+                            <li>Donut Assortment</li>
+                            <li>Pineapple Slices</li>
+                            <li>Breads and Spreads</li>
+                            <li>Pink Grapefruit Half</li>
+                            <li>Blueberry Muffin</li>
+                            <li>Blueberries</li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Lunch">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Earhart</h1>
+            <a href="/Menus/ERHT/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/ERHT/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/ERHT/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                        <li data-role="list-divider">Granite Grill</li>
+                            <li>Hamburgers</li>
+                            <li>Thai Chicken Green Curry</li>
+                            <li>Chicken Strips</li>
+                            <li>Korean Grilled Shark</li>
+                            <li>Honey</li>
+                            <li>Thincut Fries <span style="float:right; color:green;">v</span></li>
+                        <li data-role="list-divider">Souper Deli</li>
+                            <li>Loaded Potato Soup</li>
+                            <li>Deli w/Fresh Baked Breads</li>
+                            <li>Thai Steak Wrap</li>
+                        <li data-role="list-divider">Heartland Classics</li>
+                            <li>Jasmine Rice <span style="float:right; color:green;">v</span></li>
+                            <li>Picadillo Para Taco</li>
+                            <li>Refried Beans <span style="float:right; color:green;">v</span></li>
+                            <li>Corn</li>
+                            <li>Beef Meatball</li>
+                        <li data-role="list-divider">The Gallery</li>
+                            <li>Make Your Own Stir Fry</li>
+                            <li>Eggplant Tofu Stir Fry <span style="float:right; color:green;">v</span></li>
+                            <li>Pad Thai (Contains Nuts) <span style="float:right; color:green;">v</span></li>
+                            <li>Pork Pot Stickers</li>
+                        <li data-role="list-divider">Totally Italian</li>
+                            <li>Cheese Bread Stick</li>
+                            <li>Pasta Your Way</li>
+                        <li data-role="list-divider">The Pastry Shop</li>
+                            <li>Carnival Cookie</li>
+                            <li>Bananas in Coconut Cream</li>
+                            <li>Chocolate Chip Cookie</li>
+                            <li>Chocolate Cookies And Cream Cake</li>
+                            <li>Coconut Rice <span style="float:right; color:green;">v</span></li>
+                            <li>Salad Fruit 14# Piazza</li>
+                            <li>Fluffy Lemon Pie</li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Dinner">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Earhart</h1>
+            <a href="/Menus/ERHT/2012/3/29" data-ajax="false" class="ui-btn-right">Today</a>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-l" data-iconpos="notext" data-ajax="false" href="/Menus/ERHT/2012/3/28">&nbsp;</a>
+                </div>
+                <div class="ui-block-b" style="width:80%; text-align: center;">Thursday, Mar 29, 2012</div>
+                <div class="ui-block-c" style="width:10%;">
+                        <a data-role="button" data-icon="arrow-r" data-iconpos="notext" data-ajax="false" href="/Menus/ERHT/2012/3/30">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                        <li data-role="list-divider">Granite Grill</li>
+                            <li>Thincut Fries <span style="float:right; color:green;">v</span></li>
+                            <li>Hamburgers</li>
+                            <li>Fish Square</li>
+                        <li data-role="list-divider">Souper Deli</li>
+                            <li>Potato Chips</li>
+                            <li>Loaded Potato Soup</li>
+                            <li>Deli w/Fresh Baked Breads</li>
+                            <li>Antipasto Platter</li>
+                        <li data-role="list-divider">Heartland Classics</li>
+                            <li>Mexican Zucchini <span style="float:right; color:green;">v</span></li>
+                            <li>Corn <span style="float:right; color:green;">v</span></li>
+                            <li>Cajun Seasoned Grilled Chicken Breast</li>
+                            <li>Wet Burrito <span style="float:right; color:green;">v</span></li>
+                            <li>Meximelt Wrap</li>
+                        <li data-role="list-divider">The Gallery</li>
+                            <li>Pork Pot Stickers</li>
+                            <li>Eggplant Tofu Stir Fry <span style="float:right; color:green;">v</span></li>
+                            <li>Pad Thai (Contains Nuts) <span style="float:right; color:green;">v</span></li>
+                            <li>Make Your Own Stir Fry</li>
+                        <li data-role="list-divider">Totally Italian</li>
+                            <li>Pasta Your Way</li>
+                            <li>Cheese Bread Stick</li>
+                        <li data-role="list-divider">The Pastry Shop</li>
+                            <li>Red Raspberries</li>
+                            <li>Deep Dish Peach Pie</li>
+                            <li>Chocolate Cookies And Cream Cake</li>
+                            <li>Chocolate Chip Cookie</li>
+                            <li>Salad Fruit 14# Piazza</li>
+                            <li>Carnival Cookie</li>
+                </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none" class="">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none" class="">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none" class="ui-btn-active ui-state-persist">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="d" id="Info">
+        <div data-role="header" data-position="fixed" data-id="header">
+            <a href="/Menus/" data-icon="arrow-l" data-iconpos="left" data-ajax="false">Locations</a>
+            <h1>Information</h1>
+        </div>
+        <div data-role="content">
+            <h2>Earhart Dining Court</h2>
+            <h3>Address & Phone</h3>
+            <p>(765) 494-2410</p>
+            <p>1275 First Street<br />West Lafayette, IN 47906-4231</p>
+            <h3>Hours - Academic Year</h3>
+            <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d" data-divider-theme="e">
+                <li data-role="list-divider">Monday - Friday</li>
+                <li>Breakfast: 6:30 a.m.-9:30 a.m.</li>
+                <li>Lunch: 11:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: 5:00 p.m.-8:00 p.m.</li>
+                <li data-role="list-divider">Saturday</li>
+                <li>Breakfast: Closed</li>
+                <li>Lunch: 11:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: 5:00 p.m.-7:30 p.m.</li>
+                <li data-role="list-divider">Sunday</li>
+                <li>Breakfast: Closed</li>
+                <li>Lunch: 11:00 a.m.-2:00 p.m.</li>
+                <li>Dinner: Closed</li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="footer">
+            <div data-role="navbar">
+                <ul id="meal-tabs">
+                    <li id="tab-breakfast"><a href="#Breakfast" data-icon="grid" data-transition="none">Breakfast</a></li>
+                    <li id="tab-lunch"><a href="#Lunch" data-icon="grid" data-transition="none">Lunch</a></li>
+                    <li id="tab-dinner"><a href="#Dinner" data-icon="grid" data-transition="none">Dinner</a></li>
+                    <li id="tab-info"><a href="#Info" data-icon="info" data-transition="none" class="ui-btn-active ui-state-persist">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
