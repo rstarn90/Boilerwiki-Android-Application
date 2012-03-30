@@ -32,7 +32,7 @@ public class Search_sort {
 			e1.printStackTrace();
 		}
 		try {
-			connection = DriverManager.getConnection(connectionURL, "boilerwiki", "dbAdmin_Pass1");
+			connection = DriverManager.getConnection(connectionURL, "", ""); //removed for saftey
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
