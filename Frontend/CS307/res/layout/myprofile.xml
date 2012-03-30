@@ -58,48 +58,29 @@
                 android:text="Purdue News" />
         </LinearLayout>
     </HorizontalScrollView>
-
+
     <AbsoluteLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1.06" >
 
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="122dp"
-            android:layout_y="256dp"
-            android:src="@drawable/ic_launcher" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="126dp"
-            android:layout_y="326dp"
-            android:text="My Profile" />
-
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView1"
             android:layout_width="133dp"
             android:layout_height="36dp"
-            android:layout_x="18dp"
-            android:layout_y="143dp"
+            android:layout_x="16dp"
+            android:layout_y="16dp"
             android:background="#ffffff"
             android:ems="10"
             android:text=" "
-            android:textColor="#000000" >
-
-            <requestFocus />
-        </AutoCompleteTextView>
+            android:textColor="#000000" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="159dp"
-            android:layout_y="138dp"
+            android:layout_x="156dp"
+            android:layout_y="12dp"
             android:text="subject" />
 
         <Button
@@ -107,9 +88,35 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="239dp"
-            android:layout_y="138dp"
+            android:layout_x="236dp"
+            android:layout_y="12dp"
             android:text="search" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="102dp"
+            android:layout_y="76dp"
+            android:text="My Profile"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/button10"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_x="135dp"
+            android:layout_y="110dp"
+            android:text="Add item" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:layout_x="94dp"
+            android:layout_y="109dp"
+            android:src="@android:drawable/btn_star" />
     </AbsoluteLayout>
 
 </LinearLayout>
