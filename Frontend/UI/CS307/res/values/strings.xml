@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="subject">Choose a subject</string>
-    <string-array name="subject_array">
-        	<item>Academic</item>
-        	<item>Entertainment</item>
-        	<item>Food/Drinks</item>
-        	<item>Housing</item>
-    </string-array>
+
+    <string name="hello">Hello World, BoilerWikiActivity!</string>
+    <string name="app_name">BoilerWiki</string>
+
 </resources>

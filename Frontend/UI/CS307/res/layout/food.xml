@@ -24,8 +24,7 @@
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Academics"
-                android:onClick="onClick" />
+                android:text="Academics" />
 
             <Button
                 android:id="@+id/button5"
@@ -64,41 +63,81 @@
         android:layout_height="wrap_content"
         android:layout_weight="1.06" >
 
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="133dp"
+            android:layout_height="36dp"
+            android:layout_x="14dp"
+            android:layout_y="14dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:text=" "
+            android:textColor="#000000" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="207dp"
-            android:layout_y="171dp"
-            android:text="search" />
+            android:layout_x="158dp"
+            android:layout_y="10dp"
+            android:text="subject" />
 
-
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView1"
-            android:layout_width="188dp"
-            android:layout_height="36dp"
-            android:layout_x="23dp"
-            android:layout_y="177dp"
-            android:background="#ffffff"
-            android:ems="10"
-            android:text=" "
-            android:textColor="#000000" />
-
-        <ImageButton
-            android:id="@+id/imageButton1"
+        <Button
+            android:id="@+id/button9"
+            style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="122dp"
-            android:layout_y="256dp"
-            android:src="@drawable/ic_launcher" />
+            android:layout_x="246dp"
+            android:layout_y="9dp"
+            android:text="search" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="126dp"
-            android:layout_y="326dp"
-            android:text="My Profile" />
+            android:layout_x="5dp"
+            android:layout_y="56dp"
+            android:text="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/button13"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="240dp"
+            android:layout_y="86dp"
+            android:text="Types" />
+
+        <Button
+            android:id="@+id/button11"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="107dp"
+            android:layout_y="86dp"
+            android:text="Rating" />
+
+        <Button
+            android:id="@+id/button12"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="182dp"
+            android:layout_y="86dp"
+            android:text="Price" />
+
+        <Button
+            android:id="@+id/button10"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="21dp"
+            android:layout_y="86dp"
+            android:text="Location" />
 
     </AbsoluteLayout>
 
