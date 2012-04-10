@@ -2,60 +2,69 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#D4A017">
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content" 
+        android:overScrollMode="always" >
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal" >
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:background="#AF7817">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home" />
+                android:contentDescription="Home" 
+                android:src="@drawable/bw_home" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Academics"
-                android:onClick="onClick" />
+                android:contentDescription="Academics"
+                android:src="@drawable/bw_academic" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Entertainment" />
+                android:contentDescription="Entertainment"
+                android:src="@drawable/bw_entertainment" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Food/Drink" />
+                android:contentDescription="Food/Drink"
+                android:src="@drawable/bw_food" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Housing" />
+                android:contentDescription="Housing"
+                android:src="@drawable/bw_housing" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Profile" />
+                android:contentDescription="My Profile"
+                android:src="@drawable/bw_myprofile" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Purdue News" />
+                android:contentDescription="Purdue News"
+                android:src="@drawable/bw_news" />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -64,14 +73,22 @@
         android:layout_height="wrap_content"
         android:layout_weight="1.06" >
 
-        <Button
-            android:id="@+id/button8"
+        <ImageButton
+            android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="207dp"
-            android:layout_y="171dp"
-            android:text="search" />
+            android:layout_x="122dp"
+            android:layout_y="256dp"
+            android:src="@drawable/bw_myprofile" />
 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="120dp"
+            android:layout_y="304dp"
+            android:text="My Profile"
+            android:textColor="#000000" />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView1"
@@ -82,23 +99,19 @@
             android:background="#ffffff"
             android:ems="10"
             android:text=" "
+            android:textColor="#000000" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="222dp"
+            android:layout_y="171dp"
+            android:text="search"
             android:textColor="#000000" />
-
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="122dp"
-            android:layout_y="256dp"
-            android:src="@drawable/ic_launcher" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="126dp"
-            android:layout_y="326dp"
-            android:text="My Profile" />
 
     </AbsoluteLayout>
 
