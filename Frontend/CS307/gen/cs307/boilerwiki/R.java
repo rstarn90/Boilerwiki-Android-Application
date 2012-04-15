@@ -10,7 +10,6 @@ package cs307.boilerwiki;
 public final class R {
     public static final class array {
         public static final int Academic_list=0x7f050000;
-        public static final int Activities=0x7f05000d;
         public static final int Bedroom=0x7f05000c;
         public static final int Class=0x7f050004;
         public static final int Entertainment_list=0x7f050001;
@@ -19,6 +18,7 @@ public final class R {
         public static final int Games=0x7f05000a;
         public static final int Gender=0x7f05000b;
         public static final int Housing_list=0x7f050003;
+        public static final int Landlord=0x7f05000d;
         public static final int Location=0x7f050007;
         public static final int Price=0x7f050006;
         public static final int Rating=0x7f050005;
@@ -30,21 +30,23 @@ public final class R {
         public static final int button_outline=0x7f020000;
         public static final int bw_academic=0x7f020001;
         public static final int bw_academic_h=0x7f020002;
-        public static final int bw_entertainment=0x7f020003;
-        public static final int bw_entertainment_h=0x7f020004;
-        public static final int bw_food=0x7f020005;
-        public static final int bw_food_h=0x7f020006;
-        public static final int bw_home=0x7f020007;
-        public static final int bw_home_h=0x7f020008;
-        public static final int bw_housing=0x7f020009;
-        public static final int bw_housing_h=0x7f02000a;
-        public static final int bw_myprofile=0x7f02000b;
-        public static final int bw_myprofile_h=0x7f02000c;
-        public static final int bw_news=0x7f02000d;
-        public static final int bw_news_h=0x7f02000e;
-        public static final int hvhv=0x7f02000f;
-        public static final int ic_launcher=0x7f020010;
-        public static final int search_outline=0x7f020011;
+        public static final int bw_dropdown=0x7f020003;
+        public static final int bw_dropdown_h=0x7f020004;
+        public static final int bw_entertainment=0x7f020005;
+        public static final int bw_entertainment_h=0x7f020006;
+        public static final int bw_food=0x7f020007;
+        public static final int bw_food_h=0x7f020008;
+        public static final int bw_home=0x7f020009;
+        public static final int bw_home_h=0x7f02000a;
+        public static final int bw_housing=0x7f02000b;
+        public static final int bw_housing_h=0x7f02000c;
+        public static final int bw_logo_title=0x7f02000d;
+        public static final int bw_myprofile=0x7f02000e;
+        public static final int bw_myprofile_h=0x7f02000f;
+        public static final int bw_news=0x7f020010;
+        public static final int bw_news_h=0x7f020011;
+        public static final int ic_launcher=0x7f020012;
+        public static final int search_outline=0x7f020013;
     }
     public static final class id {
         public static final int autoCompleteTextView1=0x7f060013;

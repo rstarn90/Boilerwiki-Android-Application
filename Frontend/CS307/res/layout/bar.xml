@@ -261,8 +261,8 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="152dp"
-            android:layout_y="82dp"
+            android:layout_x="126dp"
+            android:layout_y="84dp"
             android:text="Location"
             android:textColor="#000000" />
 
@@ -271,8 +271,8 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="238dp"
-            android:layout_y="82dp"
+            android:layout_x="220dp"
+            android:layout_y="84dp"
             android:text="Rating"
             android:textColor="#000000" />
     </AbsoluteLayout>

@@ -45,6 +45,14 @@ public class Myprofile extends Activity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mStrings);
         listView.setAdapter(adapter);
         
+        Button addItem = (Button)findViewById(R.id.button21);
+        addItem.setOnClickListener(new View.OnClickListener() {			
+			public void onClick(View v) {				
+				clearButtons();							
+				startActivity(new Intent("android.intent.action.ADD_ITEM"));
+			}
+		});
+        
         button[6] = (ImageButton)findViewById(R.id.button7);
         button[6].setOnClickListener(new View.OnClickListener() {
 			
@@ -109,6 +117,7 @@ public class Myprofile extends Activity {
         dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
         dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
         dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
+        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
         dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }

@@ -94,6 +94,7 @@ public class Description extends Activity {
         dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
         dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
         dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
+        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
         dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }

@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class Add_Item extends Activity {
 	
-	Button[] dropButtonList = new Button[11];
+	Button[] dropButtonList = new Button[23];
 	ImageButton[] button=new ImageButton[9];
     /** Called when the activity is first created. */
     @Override
@@ -45,7 +45,7 @@ public class Add_Item extends Activity {
         	dropButtonList[i].bringToFront();
         }
         
-        Spinner list = (Spinner) findViewById(R.id.button10);
+        Spinner list = (Spinner) findViewById(R.id.button21);
         ArrayAdapter additemAdapter = ArrayAdapter.createFromResource(
         		this, R.array.Academic_list, android.R.layout.simple_spinner_item);
         		additemAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -61,13 +61,13 @@ public class Add_Item extends Activity {
 	});
  */       
         
-       Spinner list2 = (Spinner) findViewById(R.id.button11);
+       Spinner list2 = (Spinner) findViewById(R.id.button22);
        ArrayAdapter categoryAdapter = ArrayAdapter.createFromResource(
           		this, R.array.Entertainment_list, android.R.layout.simple_spinner_item);
        			categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
            		list2.setAdapter(categoryAdapter);
            		
-       Spinner list3 = (Spinner) findViewById(R.id.button12);
+       Spinner list3 = (Spinner) findViewById(R.id.button23);
        ArrayAdapter classAdapter = ArrayAdapter.createFromResource(
                 this, R.array.Food_list, android.R.layout.simple_spinner_item);
        classAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -150,6 +150,7 @@ public class Add_Item extends Activity {
         dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
         dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
         dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
+        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
         dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }

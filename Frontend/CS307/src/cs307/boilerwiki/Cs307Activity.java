@@ -206,6 +206,25 @@ public class Cs307Activity extends Activity {
 				startActivity(new Intent("android.intent.action.NEWS"));
 			}
 		});
+        /*
+         * 
+         * 
+        dropButtonList[0] = ((Button) findViewById(R.id.button9));
+        dropButtonList[1] = ((Button) findViewById(R.id.button10));
+        dropButtonList[2] = ((Button) findViewById(R.id.button11));
+        dropButtonList[3] = ((Button) findViewById(R.id.button12));
+        dropButtonList[4] = ((Button) findViewById(R.id.button13));
+        dropButtonList[5] = ((Button) findViewById(R.id.button14));
+        dropButtonList[6] = ((Button) findViewById(R.id.button15));
+        dropButtonList[7] = ((Button) findViewById(R.id.button16));
+        dropButtonList[8] = ((Button) findViewById(R.id.button17));
+        dropButtonList[9] = ((Button) findViewById(R.id.button18));
+        dropButtonList[10] = ((Button) findViewById(R.id.button19));
+         * 
+         * 
+         * 
+         */
+ 
         
         dropButtonHandler(dropButtonList[0],"android.intent.action.ACADEMIC");
         dropButtonHandler(dropButtonList[1],"android.intent.action.ACADEMIC");
@@ -215,6 +234,7 @@ public class Cs307Activity extends Activity {
         dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
         dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
         dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
+        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
         dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }

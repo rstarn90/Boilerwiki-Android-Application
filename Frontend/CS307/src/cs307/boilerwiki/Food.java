@@ -8,19 +8,45 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Spinner;
 
 public class Food extends Activity {
 	
 	Button[] dropButtonList = new Button[11];
 	ImageButton[] button=new ImageButton[9];
+	Button[] buttonList = new Button[1];
     /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-
-    	Button[] buttonList = new Button[1];
-    	   	
+    public void onCreate(Bundle savedInstanceState) { 	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.food);
+/*        
+        Spinner list = (Spinner) findViewById(R.id.button21);
+        ArrayAdapter classAdapter = ArrayAdapter.createFromResource(
+        		this, R.array.Food, android.R.layout.simple_spinner_item);
+        		classAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        		list.setAdapter(classAdapter);
+        
+        Spinner list2 = (Spinner) findViewById(R.id.button23);
+        ArrayAdapter priceAdapter = ArrayAdapter.createFromResource(
+          		this, R.array.Price, android.R.layout.simple_spinner_item);
+        		priceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+           		list2.setAdapter(priceAdapter);
+
+        Spinner list3 = (Spinner) findViewById(R.id.button22);
+        ArrayAdapter ratingAdapter = ArrayAdapter.createFromResource(
+                this, R.array.Rating, android.R.layout.simple_spinner_item);
+        		ratingAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                list3.setAdapter(ratingAdapter);
+                
+                
+        Spinner list4 = (Spinner) findViewById(R.id.button24);
+        ArrayAdapter locationAdapter = ArrayAdapter.createFromResource(
+                this, R.array.Location, android.R.layout.simple_spinner_item);
+        		locationAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                list4.setAdapter(locationAdapter);            
+*/
+        
         
         dropButtonList[0] = ((Button) findViewById(R.id.button9));
         dropButtonList[1] = ((Button) findViewById(R.id.button10));
@@ -102,6 +128,7 @@ public class Food extends Activity {
         dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
         dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
         dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
+        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
         dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }

@@ -17,14 +17,28 @@ import android.widget.Toast;
 public class Bar extends Activity {
 	Button[] dropButtonList = new Button[11];
 	ImageButton[] button=new ImageButton[9];
+	Button[] buttonList = new Button[1];
     /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-
-    	Button[] buttonList = new Button[1];
-    	   	
+    public void onCreate(Bundle savedInstanceState) {	   	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bar);
+
+/*        
+        Spinner list = (Spinner) findViewById(R.id.button21);
+        ArrayAdapter classAdapter = ArrayAdapter.createFromResource(
+        		this, R.array.Location, android.R.layout.simple_spinner_item);
+        classAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        		list.setAdapter(classAdapter);
+        
+        			
+        		
+       Spinner list2 = (Spinner) findViewById(R.id.button22);
+       ArrayAdapter ratingAdapter = ArrayAdapter.createFromResource(
+          		this, R.array.Rating, android.R.layout.simple_spinner_item);
+       			ratingAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+           		list2.setAdapter(ratingAdapter);        
+*/
         
         dropButtonList[0] = ((Button) findViewById(R.id.button9)); // COURSES
         dropButtonList[1] = ((Button) findViewById(R.id.button10)); // PROFESSORS
@@ -49,18 +63,7 @@ public class Bar extends Activity {
 			    //startActivity(new Intent("android.intent.action.HOME"));
 			}
 		});
-        button[7] = (ImageButton)findViewById(R.id.imageButton1);
-        button[7].setOnClickListener(new View.OnClickListener() {
-			
-			public void onClick(View v) {
-				
-				clearButtons();
-				
-				button[7].setImageResource(R.drawable.bw_myprofile_h);
-				
-			    startActivity(new Intent("android.intent.action.MYPROFILE"));
-			}
-		});
+        
         button[6] = (ImageButton)findViewById(R.id.button7);
         button[6].setOnClickListener(new View.OnClickListener() {
 			
@@ -290,14 +293,15 @@ public class Bar extends Activity {
 		});
         
         
-        dropButtonHandler(dropButtonList[0],"android.intent.action.COURSES");
-        dropButtonHandler(dropButtonList[1],"android.intent.action.PROFESSORS");
+        dropButtonHandler(dropButtonList[0],"android.intent.action.ACADEMIC");
+        dropButtonHandler(dropButtonList[1],"android.intent.action.ACADEMIC");
         dropButtonHandler(dropButtonList[2],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[3],"android.intent.action.HOOKAH");
         dropButtonHandler(dropButtonList[4],"android.intent.action.STUDENT_ORGANIZATIONS");
         dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
-        dropButtonHandler(dropButtonList[6],"android.intent.action.RESTAURANTS");
+        dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
         dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
+        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
         dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }

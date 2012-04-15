@@ -49,18 +49,7 @@ public class Restaurant extends Activity {
 			    //startActivity(new Intent("android.intent.action.HOME"));
 			}
 		});
-        button[7] = (ImageButton)findViewById(R.id.imageButton1);
-        button[7].setOnClickListener(new View.OnClickListener() {
-			
-			public void onClick(View v) {
-				
-				clearButtons();
-				
-				button[7].setImageResource(R.drawable.bw_myprofile_h);
-				
-			    startActivity(new Intent("android.intent.action.MYPROFILE"));
-			}
-		});
+        
         button[6] = (ImageButton)findViewById(R.id.button7);
         button[6].setOnClickListener(new View.OnClickListener() {
 			
@@ -290,14 +279,15 @@ public class Restaurant extends Activity {
 		});
         
         
-        dropButtonHandler(dropButtonList[0],"android.intent.action.COURSES");
-        dropButtonHandler(dropButtonList[1],"android.intent.action.PROFESSORS");
+        dropButtonHandler(dropButtonList[0],"android.intent.action.ACADEMIC");
+        dropButtonHandler(dropButtonList[1],"android.intent.action.ACADEMIC");
         dropButtonHandler(dropButtonList[2],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[3],"android.intent.action.HOOKAH");
         dropButtonHandler(dropButtonList[4],"android.intent.action.STUDENT_ORGANIZATIONS");
         dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
-        dropButtonHandler(dropButtonList[6],"android.intent.action.RESTAURANTS");
+        dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
         dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
+        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
         dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
         dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }
