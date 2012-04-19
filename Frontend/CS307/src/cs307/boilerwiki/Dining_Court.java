@@ -78,7 +78,7 @@ public class Dining_Court extends Activity {
 				clearButtons();
 				
 				final CharSequence[] items = {"Bars","Hookah","Student Orgs","Activities"};
-				final String[] intentList = {"android.intent.action.BARS","android.intent.action.HOOKAH","android.intent.action.STUDENT_ORGANIZATIONS","android.intent.action.ACTIVITIES"};
+				final String[] intentList = {"android.intent.action.BAR","android.intent.action.HOOKAH","android.intent.action.STUDENT_ORGANIZATIONS","android.intent.action.ACTIVITIES"};
 				
 				
 				popUpBuilder("Entertainment",context,items,intentList);
