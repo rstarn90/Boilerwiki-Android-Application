@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cs307.boilerwiki"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Cs307Activity"
+            android:label="@string/BW_Title_Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cs307Activity"
+            android:label="@string/BW_Title_Home">
+            <intent-filter>
+                <action android:name="android.intent.action.HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Academic"
+            android:label="@string/BW_Title_Academic" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACADEMIC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Entertainment"
+            android:label="@string/BW_Title_Entertainment" >
+            <intent-filter>
+                <action android:name="android.intent.action.ENTERTAINMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Food"
+            android:label="@string/BW_Title_Food" >
+            <intent-filter>
+                <action android:name="android.intent.action.FOOD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Housing"
+            android:label="@string/BW_Title_Housing" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOUSING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Myprofile"
+            android:label="@string/BW_Title_MyProfile" >
+            <intent-filter>
+                <action android:name="android.intent.action.MYPROFILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".News"
+            android:label="@string/BW_Title_News" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEWS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Description"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.DESCRIPTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Add_Item"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ADD_ITEM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dining_Court"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.DINING_COURT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Entertainment"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ENTERTAINMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Food"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FOOD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Hookah"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOOKAH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Housing"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOUSING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MYPROFILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".News"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEWS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Off_Campus"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.OFF_CAMPUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".On_Campus"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ON_CAMPUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Student_Org"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.STUDENT_ORGANIZATIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Activities"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTIVITIES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

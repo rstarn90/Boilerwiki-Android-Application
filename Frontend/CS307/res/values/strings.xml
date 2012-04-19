@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, BoilerWikiActivity!</string>
+    <string name="app_name">BoilerWiki</string>
+    <string name="BW_Title_Home">BoilerWiki-Home</string>
+    <string name="BW_Title_Academic">BoilerWiki-Academic</string>
+    <string name="BW_Title_Entertainment">BoilerWiki-Entertainment</string>
+    <string name="BW_Title_Food">BoilerWiki-Food</string>
+    <string name="BW_Title_Housing">BoilerWiki-Housing</string>
+    <string name="BW_Title_MyProfile">BoilerWiki-MyProfile</string>
+    <string name="BW_Title_News">BoilerWiki-Purdue News</string>
+    <string-array name="Academic_list">
+        <item>Professor</item>
+        <item>Classes</item>
+	</string-array>
+	<string-array name="Entertainment_list">
+        <item>Bars</item>
+        <item>Hookah</item>
+        <item>Student Organization</item>
+        <item>Activities</item>
+	</string-array>
+	<string-array name="Food_list">
+        <item>Restaurant</item>
+        <item>Dining Court</item>
+        <item>Bars</item>
+	</string-array>
+	<string-array name="Housing_list">
+        <item>On Campus</item>
+        <item>Off Campus</item>
+	</string-array>
+	<string-array name="Class">
+        <item>All Class</item>
+        <item>AAE</item>
+        <item>AAS</item>
+        <item>ABE</item>
+        <item>AD</item>
+        <item>AGEC</item>
+        <item>AGR</item>
+        <item>AGR</item>
+        <item>AGRY</item>
+        <item>AMST</item>
+        <item>ANSC</item>
+        <item>ANTH</item>
+        <item>ARAB</item>
+        <item>ASAM</item>
+        <item>ASL</item>
+        <item>ASM</item>
+        <item>ASTR</item>
+        <item>AT</item>
+        <item>BCHM</item>
+        <item>BCM</item>
+        <item>BIOL</item>
+        <item>BME</item>
+        <item>BTNY</item>
+        <item>CDFS</item>
+        <item>CE</item>
+        <item>CEM</item>
+        <item>CGT</item>
+        <item>CHE</item>
+        <item>CHM</item>
+        <item>CHNS</item>
+        <item>CLCS</item>
+        <item>CLPH</item>
+        <item>CMPL</item>
+        <item>CNIT</item>
+        <item>COM</item>
+        <item>CS</item>
+        <item>CSR</item>
+        <item>DANC</item>
+        <item>EAS</item>
+        <item>ECE</item>
+        <item>ECET</item>
+        <item>ECON</item>
+        <item>EDCI</item>
+        <item>EDPS</item>
+        <item>EDST</item>
+        <item>ENE</item>
+        <item>ENGL</item>
+        <item>ENGR</item>
+        <item>ENTM</item>
+        <item>ENTR</item>
+        <item>FLL</item>
+        <item>FN</item>
+        <item>FNR</item>
+        <item>FR</item>
+        <item>FS</item>
+        <item>FVS</item>
+        <item>GER</item>
+        <item>GREK</item>
+        <item>GS</item>
+        <item>HDFS</item>
+        <item>HEBR</item>
+        <item>HIST</item>
+        <item>HK</item>
+        <item>HONR</item>
+        <item>HORT</item>
+        <item>HSCI</item>
+        <item>HTM</item>
+        <item>IDE</item>
+        <item>IDIS</item>
+        <item>IE</item>
+        <item>IET</item>
+        <item>IPPH</item>
+        <item>IT</item>
+        <item>ITAL</item>
+        <item>JPNS</item>
+        <item>JWST</item>
+        <item>KRAN</item>
+        <item>LA</item>
+        <item>LALS</item>
+        <item>LATN</item>
+        <item>LCME</item>
+        <item>LING</item>
+        <item>MA</item>
+        <item>MBA</item>
+        <item>MCMP</item>
+        <item>ME</item>
+        <item>MET</item>
+        <item>MFET</item>
+        <item>MGMT</item>
+        <item>MSCI</item>
+        <item>MSE</item>
+        <item>MUS</item>
+        <item>NRES</item>
+        <item>NUCL</item>
+        <item>NUPH</item>
+        <item>OBHR</item>
+        <item>OLS</item>
+        <item>PES</item>
+        <item>PHAD</item>
+        <item>PHIL</item>
+        <item>PHPR</item>
+        <item>PHYS</item>
+        <item>POL</item>
+        <item>PSY</item>
+        <item>PTGS</item>
+        <item>REL</item>
+        <item>RUSS</item>
+        <item>SCI</item>
+        <item>SIA</item>
+        <item>SLHS</item>
+        <item>SOC</item>
+        <item>SPAN</item>
+        <item>SPEC</item>
+        <item>STAT</item>
+        <item>TECH</item>
+        <item>THTR</item>
+        <item>WOST</item>
+        <item>YDAE</item>
+	</string-array>
+	<string-array name="Rating">
+        <item>All Rating</item>
+        <item>1 Stars and Up</item>
+        <item>2 Stars and Up</item>
+        <item>3 Stars and Up</item>
+        <item>4 Stars and Up</item>
+        <item>5 Stars and Up</item>
+	</string-array>
+	<string-array name="Price">
+        <item>All Prices</item>
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+        <item>$$$$</item>
+        <item>$$$$$</item>
+	</string-array>
+	<string-array name="Location">
+        <item>All Location</item>
+        <item>Near Campus</item>
+        <item>West Lafayette</item>
+        <item>Lafayette</item>
+	</string-array>
+	<string-array name="Food">
+	    <item> </item>
+	    <item>All Food Types</item>
+	    <item>American</item>
+	    <item>Barbeque</item>
+	    <item>Breakfast and Brunch</item>
+	    <item>Cafes</item>
+	    <item>Chinese</item>
+        <item>French</item>
+        <item>Greek</item>
+        <item>Hot Dogs</item>
+        <item>Indian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Kosher</item>
+        <item>Mediterranean</item>
+        <item>Mexican</item>
+        <item>Middle Easter</item>
+        <item>Pakistani</item>
+        <item>Pizza</item>
+        <item>Russian</item>
+        <item>Sandwhich</item>
+        <item>Seafood</item>
+        <item>Steakhouse</item>
+        <item>Sushi</item>
+        <item>Thai</item>
+        <item>Vegan/Vegatarian</item>
+        <item>Vietnamese</item>
+	</string-array>
+	<string-array name="student_organization">
+        <item>All Categories</item>
+        <item>Activism</item>
+        <item>Community Service</item>
+        <item>Greek Organization</item>
+        <item>Martial Arts</item>
+        <item>Music</item>
+        <item>Other</item>
+        <item>Political Organization</item>
+        <item>Specific Interest</item>
+        <item>Sports</item>
+	</string-array>
+	<string-array name="Games">
+        <item>All Categories</item>
+        <item>Pool</item>
+        <item>Bowling</item>
+        <item>Gym</item>
+        <item>Ice Skating</item>
+        <item>Movies</item>
+        <item>Music</item>
+        <item>Other</item>
+        <item>Skating</item>
+        <item>Theme Park</item>
+        <item>Video Games</item>
+	</string-array>
+	<string-array name="Gender">
+	    <item>Select Gender</item>
+        <item>Male Only</item>
+        <item>Female Only</item>
+        <item>Co-Ed</item>
+	</string-array>
+	<string-array name="Bedroom">
+        <item>Select Bedrooms</item>
+        <item>1 Bedroom</item>
+        <item>2 Bedroom</item>
+        <item>3 Bedroom</item>
+        <item>4 Bedroom</item>
+        <item>5 Bedroom</item>
+	</string-array>
+	<string-array name="Landlord">
+        <item>Select Landlord</item>
+        <item>B. W. Parks Management</item>
+        <item>Basham Rental</item>
+        <item>Chauncey Square Apartments</item>
+        <item>Cochran Builders</item>
+        <item>College Station</item>
+        <item>Commercial Brokers</item>
+        <item>Crestview</item>
+        <item>Doug Overman</item>
+        <item>Granite Management</item>
+        <item>Indiana</item>
+        <item>Ivan White and [something] Howes</item>
+        <item>Livesay Management</item>
+        <item>Mayne Homes</item>
+        <item>McCormick Place Apartments</item>
+        <item>Prime Campus Housing</item>
+        <item>Waterfront Apartments</item>
+        <item>Williamsburg On The Wabash</item>
+        <item>Willowbrook West</item>
+        </string-array>
+</resources>
