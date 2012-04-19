@@ -1,0 +1,9 @@
+<html>
+<Head>
+WILLIAM SUCKS!
+
+<php?
+	echo "IT WORKS";
+?>
+</head>
+</html>
