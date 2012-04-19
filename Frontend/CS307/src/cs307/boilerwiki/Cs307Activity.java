@@ -1,48 +1,31 @@
 package cs307.boilerwiki;
 
-//import spinner.example.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Cs307Activity extends Activity {
-	Button[] dropButtonList = new Button[11];
+
 	ImageButton[] button=new ImageButton[9];
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
     	Button[] buttonList = new Button[1];
-    	   	
+    	final Context context = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        
-        dropButtonList[0] = ((Button) findViewById(R.id.button9));
-        dropButtonList[1] = ((Button) findViewById(R.id.button10));
-        dropButtonList[2] = ((Button) findViewById(R.id.button11));
-        dropButtonList[3] = ((Button) findViewById(R.id.button12));
-        dropButtonList[4] = ((Button) findViewById(R.id.button13));
-        dropButtonList[5] = ((Button) findViewById(R.id.button14));
-        dropButtonList[6] = ((Button) findViewById(R.id.button15));
-        dropButtonList[7] = ((Button) findViewById(R.id.button16));
-        dropButtonList[8] = ((Button) findViewById(R.id.button17));
-        dropButtonList[9] = ((Button) findViewById(R.id.button18));
-        dropButtonList[10] = ((Button) findViewById(R.id.button19));
-        
-        for(int i = 0; i < 11; i++)
-        {
-        	dropButtonList[i].bringToFront();
-        }
-        
         
         buttonList[0] = (Button)findViewById(R.id.button8);
         buttonList[0].setOnClickListener(new View.OnClickListener() {
@@ -61,7 +44,7 @@ public class Cs307Activity extends Activity {
 			public void onClick(View v) {
 				
 				clearButtons();
-				
+
 				button[7].setImageResource(R.drawable.bw_myprofile_h);
 				
 			    startActivity(new Intent("android.intent.action.MYPROFILE"));
@@ -86,20 +69,13 @@ public class Cs307Activity extends Activity {
 				//startActivity(new Intent("android.intent.action.ACADEMIC"));
 				
 				clearButtons();
+
+				final CharSequence[] items = {"Professors", "Classes","Books"};
+				final String[] intentList = {"android.intent.action.PROFESSOR","android.intent.action.CLASSES","android.intent.action.BOOKS"};
+				
+				popUpBuilder("Academics",context,items,intentList);
 				
 				button[5].setImageResource(R.drawable.bw_academic_h);
-				
-				Button b1 = ((Button) findViewById(R.id.button9));
-				Button b2 = ((Button) findViewById(R.id.button10));
-				HorizontalScrollView HSV1 = (HorizontalScrollView) findViewById(R.id.horizontalScrollView1);
-				
-				b1.setAlpha(1);
-				b2.setAlpha(1);
-				b1.setX(96-HSV1.getScrollX());
-				b2.setX(96-HSV1.getScrollX());
-				
-				b1.setEnabled(true);
-				b2.setEnabled(true);
 			}
 		});
         button[4] = (ImageButton)findViewById(R.id.button5);
@@ -110,27 +86,13 @@ public class Cs307Activity extends Activity {
 				
 				clearButtons();
 				
+				final CharSequence[] items = {"Bars","Hookah","Student Orgs","Activities"};
+				final String[] intentList = {"android.intent.action.BAR","android.intent.action.HOOKAH","android.intent.action.STUDENT_ORGANIZATIONS","android.intent.action.ACTIVITIES"};
+				
+				
+				popUpBuilder("Entertainment",context,items,intentList);
+				
 				button[4].setImageResource(R.drawable.bw_entertainment_h);
-				
-				Button b1 = ((Button) findViewById(R.id.button11));
-				Button b2 = ((Button) findViewById(R.id.button12));
-				Button b3 = ((Button) findViewById(R.id.button13));
-				Button b4 = ((Button) findViewById(R.id.button14));
-				HorizontalScrollView HSV1 = (HorizontalScrollView) findViewById(R.id.horizontalScrollView1);
-				
-				b1.setAlpha(1);
-				b2.setAlpha(1);
-				b3.setAlpha(1);
-				b4.setAlpha(1);
-				b1.setX(151-HSV1.getScrollX());
-				b2.setX(151-HSV1.getScrollX());
-				b3.setX(151-HSV1.getScrollX());
-				b4.setX(151-HSV1.getScrollX());
-				
-				b1.setEnabled(true);
-				b2.setEnabled(true);
-				b3.setEnabled(true);
-				b4.setEnabled(true);
 			}
 		});
         button[3] = (ImageButton)findViewById(R.id.button4);
@@ -141,23 +103,12 @@ public class Cs307Activity extends Activity {
 				
 				clearButtons();
 				
+				final CharSequence[] items = {"Restaurants","Dining Courts","Bars"};
+				final String[] intentList = {"android.intent.action.FOOD","android.intent.action.DINING_COURT","android.intent.action.BAR"};
+				
+				popUpBuilder("Food",context,items,intentList);
+				
 				button[3].setImageResource(R.drawable.bw_food_h);
-				
-				Button b1 = ((Button) findViewById(R.id.button15));
-				Button b2 = ((Button) findViewById(R.id.button16));
-				Button b3 = ((Button) findViewById(R.id.button17));
-				HorizontalScrollView HSV1 = (HorizontalScrollView) findViewById(R.id.horizontalScrollView1);
-				
-				b1.setAlpha(1);
-				b2.setAlpha(1);
-				b3.setAlpha(1);
-				b1.setX(208-HSV1.getScrollX());
-				b2.setX(208-HSV1.getScrollX());
-				b3.setX(208-HSV1.getScrollX());
-				
-				b1.setEnabled(true);
-				b2.setEnabled(true);
-				b3.setEnabled(true);
 			}
 		});
         button[2] = (ImageButton)findViewById(R.id.button3);
@@ -167,19 +118,12 @@ public class Cs307Activity extends Activity {
 				//startActivity(new Intent("android.intent.action.HOUSING"));
 				clearButtons();
 				
+				final CharSequence[] items = {"Off Campus","On Campus"};
+				final String[] intentList = {"android.intent.action.OFF_CAMPUS","android.intent.action.ON_CAMPUS"};
+								
+				popUpBuilder("Housing",context,items,intentList);
+				
 				button[2].setImageResource(R.drawable.bw_housing_h);
-				
-				Button b1 = ((Button) findViewById(R.id.button18));
-				Button b2 = ((Button) findViewById(R.id.button19));
-				HorizontalScrollView HSV1 = (HorizontalScrollView) findViewById(R.id.horizontalScrollView1);
-				
-				b1.setAlpha(1);
-				b2.setAlpha(1);
-				b1.setX(265-HSV1.getScrollX());
-				b2.setX(265-HSV1.getScrollX());
-				
-				b1.setEnabled(true);
-				b2.setEnabled(true);
 			}
 		});
         button[1] = (ImageButton)findViewById(R.id.button2);
@@ -206,47 +150,29 @@ public class Cs307Activity extends Activity {
 				startActivity(new Intent("android.intent.action.NEWS"));
 			}
 		});
-        /*
-         * 
-         * 
-        dropButtonList[0] = ((Button) findViewById(R.id.button9));
-        dropButtonList[1] = ((Button) findViewById(R.id.button10));
-        dropButtonList[2] = ((Button) findViewById(R.id.button11));
-        dropButtonList[3] = ((Button) findViewById(R.id.button12));
-        dropButtonList[4] = ((Button) findViewById(R.id.button13));
-        dropButtonList[5] = ((Button) findViewById(R.id.button14));
-        dropButtonList[6] = ((Button) findViewById(R.id.button15));
-        dropButtonList[7] = ((Button) findViewById(R.id.button16));
-        dropButtonList[8] = ((Button) findViewById(R.id.button17));
-        dropButtonList[9] = ((Button) findViewById(R.id.button18));
-        dropButtonList[10] = ((Button) findViewById(R.id.button19));
-         * 
-         * 
-         * 
-         */
- 
-        
-        dropButtonHandler(dropButtonList[0],"android.intent.action.ACADEMIC");
-        dropButtonHandler(dropButtonList[1],"android.intent.action.ACADEMIC");
-        dropButtonHandler(dropButtonList[2],"android.intent.action.BAR");
-        dropButtonHandler(dropButtonList[3],"android.intent.action.HOOKAH");
-        dropButtonHandler(dropButtonList[4],"android.intent.action.STUDENT_ORGANIZATIONS");
-        dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
-        dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
-        dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
-        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
-        dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
-        dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }
     
-    public void dropButtonHandler(final Button theButton, final String theIntent)
+    public void popUpBuilder(String title, Context context, CharSequence[] items,final String[] intent)
     {
-    	theButton.setOnClickListener(new View.OnClickListener(){
-    		public void onClick(View v){
-    			clearButtons();
-    			startActivity(new Intent(theIntent));
-    		}
-    	});
+    	AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+		
+    	// set title
+		alertDialogBuilder.setTitle(title);
+ 
+		// set dialog message
+		alertDialogBuilder.setItems(items, new DialogInterface.OnClickListener() {
+
+			public void onClick(DialogInterface dialog, int item) {
+				    System.out.println(intent[item]);
+					startActivity(new Intent(intent[item]));
+			    }
+			});
+ 
+		// create alert dialog
+		AlertDialog alertDialog = alertDialogBuilder.create();
+ 
+		// show it
+		alertDialog.show();
     }
     
     public void clearButtons()
@@ -258,11 +184,5 @@ public class Cs307Activity extends Activity {
     	button[4].setImageResource(R.drawable.bw_entertainment);
     	button[5].setImageResource(R.drawable.bw_academic);
     	button[6].setImageResource(R.drawable.bw_home);
-    	    	
-    	for(int i = 0; i < 11; i++)
-    	{
-    		dropButtonList[i].setAlpha(0);
-    		dropButtonList[i].setEnabled(false);
-    	}
     }
 }

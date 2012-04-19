@@ -96,137 +96,6 @@
         android:layout_height="0dip"
         android:layout_weight="1.06" >
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Courses"
-            android:layout_x="0dp"
-            android:layout_y="0dp" 
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0"/>
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Professors"
-            android:layout_x="0dp"
-            android:layout_y="24dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-        
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Bars"
-            android:layout_x="0dp"
-            android:layout_y="0dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-        
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Hookah"
-            android:layout_x="0dp"
-            android:layout_y="24dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-
-         <Button
-            android:id="@+id/button13"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Student Orgs"
-            android:layout_x="0dp"
-            android:layout_y="48dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-         
-         <Button
-            android:id="@+id/button14"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Activites"
-            android:layout_x="0dp"
-            android:layout_y="72dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-         
-          <Button
-            android:id="@+id/button15"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Restaurants"
-            android:layout_x="0dp"
-            android:layout_y="0dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-          
-         <Button
-            android:id="@+id/button16"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Dining Courts"
-            android:layout_x="0dp"
-            android:layout_y="24dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-         
-         <Button
-            android:id="@+id/button17"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Bars"
-            android:layout_x="0dp"
-            android:layout_y="48dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-         
-         <Button
-            android:id="@+id/button18"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="On Campus"
-            android:layout_x="0dp"
-            android:layout_y="0dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
-         
-         <Button
-            android:id="@+id/button19"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
-            android:text="Off Campus"
-            android:layout_x="0dp"
-            android:layout_y="24dp"
-            android:background="@drawable/button_outline"
-            android:textColor="#000000"
-    		android:enabled="false"
-            android:alpha="0" />
          
         <ImageButton
             android:id="@+id/imageButton1"
@@ -273,6 +142,14 @@
             android:minWidth="64dp"
             android:minHeight="42dp"
             android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="38dp"
+            android:layout_y="74dp"
+            android:src="@drawable/bw_logo_title" />
 
     </AbsoluteLayout>
 

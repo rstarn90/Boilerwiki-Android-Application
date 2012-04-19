@@ -2,6 +2,9 @@ package cs307.boilerwiki;
 
 //import spinner.example.R;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -17,69 +20,17 @@ import android.widget.Toast;
 
 public class Add_Item extends Activity {
 	
-	Button[] dropButtonList = new Button[23];
+	Button[] dropButtonList = new Button[11];
 	ImageButton[] button=new ImageButton[9];
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
     	Button[] buttonList = new Button[1];
-    	   	
+    	final Context context = this;   	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_item);
-        
-        dropButtonList[0] = ((Button) findViewById(R.id.button9));
-        dropButtonList[1] = ((Button) findViewById(R.id.button10));
-        dropButtonList[2] = ((Button) findViewById(R.id.button11));
-        dropButtonList[3] = ((Button) findViewById(R.id.button12));
-        dropButtonList[4] = ((Button) findViewById(R.id.button13));
-        dropButtonList[5] = ((Button) findViewById(R.id.button14));
-        dropButtonList[6] = ((Button) findViewById(R.id.button15));
-        dropButtonList[7] = ((Button) findViewById(R.id.button16));
-        dropButtonList[8] = ((Button) findViewById(R.id.button17));
-        dropButtonList[9] = ((Button) findViewById(R.id.button18));
-        dropButtonList[10] = ((Button) findViewById(R.id.button19));
-        
-        for(int i = 0; i < 11; i++)
-        {
-        	dropButtonList[i].bringToFront();
-        }
-        
-        Spinner list = (Spinner) findViewById(R.id.button21);
-        ArrayAdapter additemAdapter = ArrayAdapter.createFromResource(
-        		this, R.array.Academic_list, android.R.layout.simple_spinner_item);
-        		additemAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        		list.setAdapter(additemAdapter);
-/*        
-       list.setOnItemSelectedListener(new OnItemSelectedListener() {
-    	   public void onItemSelected(AdapterView<?> parentView, View view, int pos, long id){
-    		   startActivity(new Intent("android.intent.action.DESCRIPTION"));
-    	   }
-    	   public void onNothingSelected(AdapterView<?> parentView){
-    		   
-    	   }
-	});
- */       
-        
-       Spinner list2 = (Spinner) findViewById(R.id.button22);
-       ArrayAdapter categoryAdapter = ArrayAdapter.createFromResource(
-          		this, R.array.Entertainment_list, android.R.layout.simple_spinner_item);
-       			categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-           		list2.setAdapter(categoryAdapter);
-           		
-       Spinner list3 = (Spinner) findViewById(R.id.button23);
-       ArrayAdapter classAdapter = ArrayAdapter.createFromResource(
-                this, R.array.Food_list, android.R.layout.simple_spinner_item);
-       classAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                list3.setAdapter(classAdapter);           		
-       
-/*       Spinner list4 = (Spinner) findViewById(R.id.button3);
-       ArrayAdapter housingAdapter = ArrayAdapter.createFromResource(
-                this, R.array.Housing_list, android.R.layout.simple_spinner_item);
-       			housingAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                list4.setAdapter(housingAdapter);
-                
-  */              
+
         buttonList[0] = (Button)findViewById(R.id.button8);
         buttonList[0].setOnClickListener(new View.OnClickListener() {
 			
@@ -96,41 +47,87 @@ public class Add_Item extends Activity {
         button[6].setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
+				
+				clearButtons();
+				
+				button[6].setImageResource(R.drawable.bw_home_h);
+				
 			    startActivity(new Intent("android.intent.action.HOME"));
 			}
 		});
-                button[5] = (ImageButton)findViewById(R.id.button6);
+        button[5] = (ImageButton)findViewById(R.id.button6);
         button[5].setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				startActivity(new Intent("android.intent.action.ACADEMIC"));
+				//startActivity(new Intent("android.intent.action.ACADEMIC"));
+				
+				clearButtons();
+
+				final CharSequence[] items = {"Professors", "Classes","Books"};
+				final String[] intentList = {"android.intent.action.PROFESSOR","android.intent.action.CLASSES","android.intent.action.BOOKS"};
+				
+				popUpBuilder("Academics",context,items,intentList);
+				
+				button[5].setImageResource(R.drawable.bw_academic_h);
 			}
 		});
         button[4] = (ImageButton)findViewById(R.id.button5);
         button[4].setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				startActivity(new Intent("android.intent.action.ENTERTAINMENT"));
+				//startActivity(new Intent("android.intent.action.ENTERTAINMENT"));
+				
+				clearButtons();
+				
+				final CharSequence[] items = {"Bars","Hookah","Student Orgs","Activities"};
+				final String[] intentList = {"android.intent.action.BAR","android.intent.action.HOOKAH","android.intent.action.STUDENT_ORGANIZATIONS","android.intent.action.ACTIVITIES"};
+				
+				
+				popUpBuilder("Entertainment",context,items,intentList);
+				
+				button[4].setImageResource(R.drawable.bw_entertainment_h);
 			}
 		});
         button[3] = (ImageButton)findViewById(R.id.button4);
         button[3].setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				startActivity(new Intent("android.intent.action.FOOD"));
+				//startActivity(new Intent("android.intent.action.FOOD"));
+				
+				clearButtons();
+				
+				final CharSequence[] items = {"Restaurants","Dining Courts","Bars"};
+				final String[] intentList = {"android.intent.action.FOOD","android.intent.action.DINING_COURT","android.intent.action.BAR"};
+				
+				popUpBuilder("Food",context,items,intentList);
+				
+				button[3].setImageResource(R.drawable.bw_food_h);
 			}
 		});
         button[2] = (ImageButton)findViewById(R.id.button3);
         button[2].setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				startActivity(new Intent("android.intent.action.HOUSING"));
+				//startActivity(new Intent("android.intent.action.HOUSING"));
+				clearButtons();
+				
+				final CharSequence[] items = {"Off Campus","On Campus"};
+				final String[] intentList = {"android.intent.action.OFF_CAMPUS","android.intent.action.ON_CAMPUS"};
+								
+				popUpBuilder("Housing",context,items,intentList);
+				
+				button[2].setImageResource(R.drawable.bw_housing_h);
 			}
 		});
         button[1] = (ImageButton)findViewById(R.id.button2);
         button[1].setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
+				
+				clearButtons();
+				
+				button[1].setImageResource(R.drawable.bw_myprofile_h);
+				
 				startActivity(new Intent("android.intent.action.MYPROFILE"));
 			}
 		});
@@ -138,31 +135,37 @@ public class Add_Item extends Activity {
         button[0].setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
+				
+				clearButtons();
+				
+				button[0].setImageResource(R.drawable.bw_news_h);
+				
 				startActivity(new Intent("android.intent.action.NEWS"));
 			}
 		});
-        
-        dropButtonHandler(dropButtonList[0],"android.intent.action.ACADEMIC");
-        dropButtonHandler(dropButtonList[1],"android.intent.action.ACADEMIC");
-        dropButtonHandler(dropButtonList[2],"android.intent.action.BAR");
-        dropButtonHandler(dropButtonList[3],"android.intent.action.HOOKAH");
-        dropButtonHandler(dropButtonList[4],"android.intent.action.STUDENT_ORGANIZATIONS");
-        dropButtonHandler(dropButtonList[5],"android.intent.action.ACTIVITIES");
-        dropButtonHandler(dropButtonList[6],"android.intent.action.FOOD");
-        dropButtonHandler(dropButtonList[7],"android.intent.action.DINING_COURT");
-        dropButtonHandler(dropButtonList[8],"android.intent.action.BAR");
-        dropButtonHandler(dropButtonList[9],"android.intent.action.ON_CAMPUS");
-        dropButtonHandler(dropButtonList[10],"android.intent.action.OFF_CAMPUS");
     }
     
-    public void dropButtonHandler(final Button theButton, final String theIntent)
+    public void popUpBuilder(String title, Context context, CharSequence[] items,final String[] intent)
     {
-    	theButton.setOnClickListener(new View.OnClickListener(){
-    		public void onClick(View v){
-    			clearButtons();
-    			startActivity(new Intent(theIntent));
-    		}
-    	});
+    	AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+		
+    	// set title
+		alertDialogBuilder.setTitle(title);
+ 
+		// set dialog message
+		alertDialogBuilder.setItems(items, new DialogInterface.OnClickListener() {
+
+			public void onClick(DialogInterface dialog, int item) {
+				    System.out.println(intent[item]);
+					startActivity(new Intent(intent[item]));
+			    }
+			});
+ 
+		// create alert dialog
+		AlertDialog alertDialog = alertDialogBuilder.create();
+ 
+		// show it
+		alertDialog.show();
     }
     
     public void clearButtons()
@@ -174,11 +177,5 @@ public class Add_Item extends Activity {
     	button[4].setImageResource(R.drawable.bw_entertainment);
     	button[5].setImageResource(R.drawable.bw_academic);
     	button[6].setImageResource(R.drawable.bw_home);
-    	    	
-    	for(int i = 0; i < 11; i++)
-    	{
-    		dropButtonList[i].setAlpha(0);
-    		dropButtonList[i].setEnabled(false);
-    	}
     }
 }
