@@ -4,11 +4,13 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="15" />
+    <uses-sdk android:minSdkVersion="10" />
+    <use-permission id="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:label="@string/app_name" android:debuggable="true">
         <activity
             android:name=".Cs307Activity"
             android:label="@string/BW_Title_Home">
@@ -31,13 +33,13 @@
             android:name=".Academic"
             android:label="@string/BW_Title_Academic" >
             <intent-filter>
-                <action android:name="android.intent.action.ACADEMIC" />
+                <action android:name="android.intent.action.PROFESSOR" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Entertainment"
+            android:name=".Academic"
             android:label="@string/BW_Title_Entertainment" >
             <intent-filter>
                 <action android:name="android.intent.action.ENTERTAINMENT" />
@@ -46,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Food"
+            android:name=".Academic"
             android:label="@string/BW_Title_Food" >
             <intent-filter>
                 <action android:name="android.intent.action.FOOD" />
@@ -55,7 +57,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Housing"
+            android:name=".Academic"
             android:label="@string/BW_Title_Housing" >
             <intent-filter>
                 <action android:name="android.intent.action.HOUSING" />
@@ -100,7 +102,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Bar"
+            android:name=".Academic"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.BAR" />
@@ -118,25 +120,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Entertainment"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.ENTERTAINMENT" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Food"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.FOOD" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Hookah"
+            android:name=".Academic"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.HOOKAH" />
@@ -145,34 +129,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Housing"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.HOUSING" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MyProfile"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MYPROFILE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".News"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.NEWS" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Off_Campus"
+            android:name=".Academic"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.OFF_CAMPUS" />
@@ -181,7 +138,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".On_Campus"
+            android:name=".Academic"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.ON_CAMPUS" />
@@ -190,7 +147,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Student_Org"
+            android:name=".Academic"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.STUDENT_ORGANIZATIONS" />
@@ -198,11 +155,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="Activities"
+                <activity
+            android:name=".Academic"
             android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.ACTIVITIES" />
+                <action android:name="android.intent.action.CLASSES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name=".Academic"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOKS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
